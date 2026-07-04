@@ -1,0 +1,27 @@
+{
+  "app": "pnpm exec ts-node --prefer-ts-exts bin/ohdsi-atlas-webapi.ts",
+  "context": {
+    "siteName": "ohdsi-synpuf",
+    "domainName": "",
+    "hostedZoneId": "",
+    "hostedZoneName": "",
+    "cognitoDomainPrefix": "ohdsi-synpuf-auth-change-me",
+    "auroraPostgresEngineVersion": "16.6",
+    "autoPauseSeconds": 900,
+    "webDbName": "ohdsi_webapi",
+    "omopDbName": "ohdsi_omop",
+    "webDbMaxAcu": 2,
+    "omopDbMaxAcu": 8,
+    "atlasImage": "ohdsi/atlas:2.14.0",
+    "webApiImage": "ohdsi/webapi:2.14.0",
+    "desiredCountOnWake": 1,
+    "idleScaleDownMinutes": 120,
+    "natGateways": 1,
+    "synpufS3Uri": "s3://synpuf-omop/",
+    "removalPolicy": "SNAPSHOT",
+    "enableAlbCognitoAuth": true,
+    "enableExecuteCommand": false,
+    "sourceKey": "SYNPUF",
+    "sourceName": "CMS DE-SynPUF OMOP"
+  }
+}

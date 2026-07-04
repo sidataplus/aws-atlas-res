@@ -1,0 +1,9 @@
+node_modules/
+cdk.out/
+dist/
+*.js
+*.d.ts
+*.map
+.DS_Store
+.env
+.env.*

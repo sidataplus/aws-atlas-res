@@ -1,0 +1,25 @@
+{
+  "name": "researchos-res-cdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sibling CDK app to deploy Research and Engineering Studio on AWS while sharing Cognito, VPC, and OMOP metadata with an OHDSI ATLAS/WebAPI stack.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "tsx test/res-efs-reuse.test.ts",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.199.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "aws-cdk": "^2.199.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

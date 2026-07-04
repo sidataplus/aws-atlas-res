@@ -1,0 +1,28 @@
+{
+  "name": "ohdsi-atlas-webapi-cdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AWS CDK deployment for OHDSI ATLAS/WebAPI + SynPUF OMOP + Cognito + scale-to-zero launcher",
+  "bin": {
+    "ohdsi-atlas-webapi": "bin/ohdsi-atlas-webapi.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy",
+    "synth": "cdk synth",
+    "test": "ts-node --prefer-ts-exts test/atlas-res-sharing.test.ts && PYTHONDONTWRITEBYTECODE=1 python3 test/wake_orchestrator_test.py"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "aws-cdk": "2.150.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.150.0",
+    "constructs": "10.3.0"
+  }
+}

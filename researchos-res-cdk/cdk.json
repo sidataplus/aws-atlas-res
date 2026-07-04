@@ -1,0 +1,20 @@
+{
+  "app": "pnpm exec tsx bin/researchos-res.ts",
+  "context": {
+    "resEnvironmentName": "res-ohdsi",
+    "resTemplateUrl": "https://research-engineering-studio-us-east-1.s3.amazonaws.com/releases/latest/ResearchAndEngineeringStudio.template.json",
+    "deployRes": true,
+
+    "createVpc": false,
+    "createEfs": true,
+
+    "isLoadBalancerInternetFacing": true,
+    "disableADJoin": true,
+    "enableLdapIDMapping": true,
+
+    "cognitoGroups": "admins,atlas,res",
+
+    "ssmPrefix": "/researchos/shared",
+    "allowOmopDbFromVpcCidr": false
+  }
+}
